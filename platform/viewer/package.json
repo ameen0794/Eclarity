@@ -1,9 +1,9 @@
 {
-  "name": "@ohif/viewer",
+  "name": "@eclarityhealth/app",
   "version": "5.0.0",
   "productVersion": "3.3.0",
-  "description": "OHIF Viewer",
-  "author": "OHIF Contributors",
+  "description": "eclarityHealth Viewer",
+  "author": "eclarityHealth Contributors",
   "license": "MIT",
   "repository": "OHIF/Viewers",
   "main": "dist/index.umd.js",

@@ -1,5 +1,8 @@
 {
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   // ===
   // Spacing
   // ===
@@ -26,11 +29,23 @@
       "autoFix": true
     }
   ],
-  "jest.autoRun": "off",
-  "prettier.disableLanguages": ["html"],
+  "prettier.disableLanguages": [
+    "html"
+  ],
   "prettier.endOfLine": "lf",
   "workbench.colorCustomizations": {},
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
 }

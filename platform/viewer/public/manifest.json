@@ -1,7 +1,7 @@
 {
-  "name": "OHIF Viewer",
+  "name": "eClarity Health",
   "short_name": "Viewer",
-  "description": "OHIF Viewer",
+  "description": "eClarity Health",
   "dir": "auto",
   "lang": "en-US",
   "orientation": "any",
