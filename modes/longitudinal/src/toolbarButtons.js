@@ -318,25 +318,42 @@ const toolbarButtons = [
       ],
     },
   },
+  // {
+  //   id: 'Crosshairs',
+  //   type: 'ohif.radioGroup',
+  //   props: {
+  //     type: 'tool',
+  //     icon: 'tool-crosshair',
+  //     label: 'Crosshairs',
+  //     commands: [
+  //       {
+  //         commandName: 'setToolActive',
+  //         commandOptions: {
+  //           toolGroupId: 'mpr',
+  //           toolName: 'Crosshairs',
+  //         },
+  //         context: 'CORNERSTONE',
+  //       },
+  //     ],
+  //   },
+  // },
   {
-    id: 'Crosshairs',
+    id: 'ReferenceLines',
     type: 'ohif.radioGroup',
     props: {
       type: 'tool',
-      icon: 'tool-crosshair',
-      label: 'Crosshairs',
+      icon: 'tool-referenceLines',
+      label: 'Reference Lines',
       commands: [
         {
-          commandName: 'setToolActive',
-          commandOptions: {
-            toolGroupId: 'mpr',
-            toolName: 'Crosshairs',
-          },
+          commandName: 'toggleReferenceLines',
+          commandOptions: {},
           context: 'CORNERSTONE',
         },
       ],
     },
   },
+
   // More...
   {
     id: 'MoreTools',

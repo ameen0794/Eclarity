@@ -125,10 +125,10 @@ function ViewerLayout({
    * is sized to our viewport.
    */
   useEffect(() => {
-    document.body.classList.add('bg-black');
+    document.body.classList.add('bg-white');
     document.body.classList.add('overflow-hidden');
     return () => {
-      document.body.classList.remove('bg-black');
+      document.body.classList.remove('bg-white');
       document.body.classList.remove('overflow-hidden');
     };
   }, []);
@@ -206,7 +206,10 @@ function ViewerLayout({
         WhiteLabeling={appConfig.whiteLabeling}
       >
         <ErrorBoundary context="Primary Toolbar">
-          <div className="relative flex justify-center">
+          <div
+            className="relative flex justify-center"
+            style={{ paddingLeft: '20px' }}
+          >
             <Toolbar servicesManager={servicesManager} />
           </div>
         </ErrorBoundary>

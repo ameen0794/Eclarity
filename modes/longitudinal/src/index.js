@@ -111,15 +111,15 @@ function modeFactory() {
       ToolBarService.init(extensionManager);
       ToolBarService.addButtons(toolbarButtons);
       ToolBarService.createButtonSection('primary', [
-        'MeasurementTools',
-        'Zoom',
-        'WindowLevel',
-        'Pan',
-        'Capture',
+        // 'MeasurementTools',
+        // 'Zoom',
+        // 'WindowLevel',
+        // 'Pan',
+        // 'Capture',
         'Layout',
-        'MPR',
-        'Crosshairs',
-        'MoreTools',
+        // 'MPR',
+        'ReferenceLines',
+        // 'MoreTools',
       ]);
     },
     onModeExit: ({ servicesManager }) => {
@@ -146,7 +146,7 @@ function modeFactory() {
       series: [],
     },
 
-    isValidMode: function({ modalities }) {
+    isValidMode: function ({ modalities }) {
       const modalities_list = modalities.split('\\');
 
       // Exclude non-image modalities
