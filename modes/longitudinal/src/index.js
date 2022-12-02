@@ -62,7 +62,7 @@ function modeFactory() {
     // We should not be.
     id,
     routeName: 'viewer',
-    displayName: 'Basic Viewer',
+    displayName: 'See Details',
     /**
      * Lifecycle hooks
      */

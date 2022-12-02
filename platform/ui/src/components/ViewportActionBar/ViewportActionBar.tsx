@@ -57,7 +57,7 @@ const ViewportActionBar = ({
 
   const borderColor = useAltStyling ? '#365A6A' : '#1D205A';
 
-  let backgroundColor = '#020424';
+  let backgroundColor = 'rgb(77 77 77)';
   if (useAltStyling) {
     backgroundColor = '#031923';
   }
@@ -98,7 +98,7 @@ const ViewportActionBar = ({
           </div>
         </div>
       </div>
-      {showNavArrows && !showCine && (
+      {/* {showNavArrows && !showCine && (
         <div className="mt-2" style={{ pointerEvents: 'all' }}>
           <ButtonGroup>
             <Button
@@ -119,12 +119,12 @@ const ViewportActionBar = ({
             </Button>
           </ButtonGroup>
         </div>
-      )}
-      {showCine && !showNavArrows && (
+      )} */}
+      {/* {showCine && !showNavArrows && (
         <div className="mt-2 mr-auto min-w-48 max-w-48">
           <CinePlayer {...cineProps} />
         </div>
-      )}
+      )} */}
       <div className="flex h-8 mt-2 ml-4 mr-2" onClick={onPatientInfoClick}>
         <PatientInfo
           showPatientInfoRef={showPatientInfoRef}

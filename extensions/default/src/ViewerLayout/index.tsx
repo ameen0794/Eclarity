@@ -244,7 +244,7 @@ function ViewerLayout({
               </ErrorBoundary>
             </div>
           </div>
-          {rightPanelComponents.length ? (
+          {/* {rightPanelComponents.length ? (
             <ErrorBoundary context="Right Panel">
               <SidePanel
                 side="right"
@@ -252,7 +252,7 @@ function ViewerLayout({
                 tabs={rightPanelComponents}
               />
             </ErrorBoundary>
-          ) : null}
+          ) : null} */}
         </React.Fragment>
       </div>
     </div>

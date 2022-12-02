@@ -74,7 +74,7 @@ const StudyBrowser = ({
 
   return (
     <React.Fragment>
-      <div
+      {/* <div
         className="flex flex-row items-center justify-center h-16 p-4 border-b w-100 border-secondary-light bg-primary-dark"
         data-cy={'studyBrowser-panel'}
       >
@@ -108,7 +108,7 @@ const StudyBrowser = ({
             );
           })}
         </ButtonGroup>
-      </div>
+      </div> */}
       <div className="flex flex-col flex-1 overflow-auto">
         {getTabContent()}
       </div>
@@ -171,7 +171,7 @@ StudyBrowser.propTypes = {
   ),
 };
 
-const noop = () => {};
+const noop = () => { };
 
 StudyBrowser.defaultProps = {
   onClickTab: noop,

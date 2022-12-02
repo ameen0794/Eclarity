@@ -324,19 +324,21 @@ function WorkList({
           seriesTableDataSource={
             seriesInStudiesMap.has(studyInstanceUid)
               ? seriesInStudiesMap.get(studyInstanceUid).map(s => {
-                  return {
-                    description: s.description || '(empty)',
-                    seriesNumber: s.seriesNumber ?? '',
-                    modality: s.modality || '',
-                    instances: s.numSeriesInstances || '',
-                  };
-                })
+                return {
+                  description: s.description || '(empty)',
+                  seriesNumber: s.seriesNumber ?? '',
+                  modality: s.modality || '',
+                  instances: s.numSeriesInstances || '',
+                };
+              })
               : []
           }
         >
           {appConfig.modes.map((mode, i) => {
             const isFirst = i === 0;
-
+            if (i > 0) {
+              return;
+            }
             const isValidMode = mode.isValidMode({ modalities });
             // TODO: Modes need a default/target route? We mostly support a single one for now.
             // We should also be using the route path, but currently are not
@@ -349,7 +351,7 @@ function WorkList({
                 key={i}
                 to={`${dataPath ? '../../' : ''}${mode.routeName}${dataPath ||
                   ''}?StudyInstanceUIDs=${studyInstanceUid}`}
-                // to={`${mode.routeName}/dicomweb?StudyInstanceUIDs=${studyInstanceUid}`}
+              // to={`${mode.routeName}/dicomweb?StudyInstanceUIDs=${studyInstanceUid}`}
               >
                 <Button
                   rounded="full"
@@ -357,7 +359,7 @@ function WorkList({
                   disabled={!isValidMode}
                   endIcon={<Icon name="launch-arrow" />} // launch-arrow | launch-info
                   className={classnames('font-medium	', { 'ml-2': !isFirst })}
-                  onClick={() => {}}
+                  onClick={() => { }}
                 >
                   {t(`Modes:${mode.displayName}`)}
                 </Button>

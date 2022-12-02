@@ -193,17 +193,17 @@ const SidePanel = ({
               className="flex flex-row items-center px-3 relative w-full"
               name={tabs.length === 1 ? `${tabs[activeTabIndex].name}` : ''}
             >
-              <Icon
+              {/* <Icon
                 name={openStateIconName[side]}
                 className={classnames(
                   'text-primary-active absolute',
                   side === 'left' && 'order-last'
                 )}
                 style={{ ...position[side] }}
-              />
+              /> */}
               {/* Todo: ass secondary label here */}
               <span className="text-primary-active">
-                {tabs.length === 1 && tabs[activeTabIndex].label}
+                Go To {tabs.length === 1 && tabs[activeTabIndex].label}
               </span>
             </Button>
           </div>

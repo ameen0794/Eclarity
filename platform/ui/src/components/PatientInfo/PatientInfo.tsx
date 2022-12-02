@@ -121,11 +121,14 @@ function PatientInfo({
       >
         <div className="relative flex justify-end cursor-pointer">
           <div className="relative">
-            <Icon name="profile" className="w-5 text-white" />
+            {/* <Icon name="profile" className="w-5 text-white" /> */}
             <Icon
               name="info-link"
               className="absolute w-5 text-white bg-black"
-              style={{ right: -7, bottom: -10 }}
+              style={{
+                paddingRight: '10px',
+                backgroundColor: 'rgb(77, 77, 77)',
+              }}
             />
           </div>
         </div>
