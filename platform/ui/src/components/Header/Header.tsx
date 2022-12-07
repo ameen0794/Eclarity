@@ -31,7 +31,7 @@ function Header({
       className="justify-between border-b-4 border-black"
       isSticky={isSticky}
     >
-      <div className="flex justify-between flex-1">
+      <div className="flex justify-start items-center flex-1">
         {/* <div className="flex items-center">
           <div
             className={classNames("inline-flex items-center mr-3", isReturnEnabled && 'cursor-pointer')}
@@ -41,6 +41,12 @@ function Header({
             <div className="ml-4">{WhiteLabeling ? CustomLogo(React) : <Svg name="logo-ohif" />}</div>
           </div>
         </div> */}
+        {/* <img src="/static/eclarity.jpeg"></img> */}
+        <a href="/">
+          {' '}
+          <h1 style={{ color: '#fff' }}>Eclarity Health</h1>
+        </a>
+
         <div className="flex items-center">{children}</div>
         {/* <div className="flex items-center">
           <span className="mr-3 text-lg text-common-light">

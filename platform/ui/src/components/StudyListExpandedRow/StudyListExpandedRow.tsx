@@ -11,11 +11,10 @@ const StudyListExpandedRow = ({
 }) => {
   const { t } = useTranslation('StudyList');
 
-
   return (
     <div className="w-full bg-black py-4 pl-12 pr-2">
       <div className="block">{children}</div>
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <Table>
           <TableHead>
             <TableRow>
@@ -44,7 +43,7 @@ const StudyListExpandedRow = ({
             ))}
           </TableBody>
         </Table>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -174,7 +174,7 @@ const SidePanel = ({
       {panelOpen ? (
         <React.Fragment>
           {/** Panel Header with Arrow and Close Actions */}
-          <div
+          {/* <div
             className={classnames(
               'px-[10px] bg-primary-dark h-9 cursor-pointer flex shrink-0',
               tabs.length === 1 && 'mb-1'
@@ -193,20 +193,19 @@ const SidePanel = ({
               className="flex flex-row items-center px-3 relative w-full"
               name={tabs.length === 1 ? `${tabs[activeTabIndex].name}` : ''}
             >
-              {/* <Icon
+              <Icon
                 name={openStateIconName[side]}
                 className={classnames(
                   'text-primary-active absolute',
                   side === 'left' && 'order-last'
                 )}
                 style={{ ...position[side] }}
-              /> */}
-              {/* Todo: ass secondary label here */}
+              />
               <span className="text-primary-active">
-                Go To {tabs.length === 1 && tabs[activeTabIndex].label}
+                {tabs.length === 1 && tabs[activeTabIndex].label}
               </span>
             </Button>
-          </div>
+          </div> */}
           {tabs.length > 1 &&
             _getMoreThanOneTabLayout(
               swiperRef,
