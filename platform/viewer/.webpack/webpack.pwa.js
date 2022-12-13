@@ -144,7 +144,7 @@ module.exports = (env, argv) => {
         overlay: { errors: true, warnings: false },
       },
       proxy: {
-        '/dicomweb': 'http://localhost:5000',
+        '/dicomweb': 'http://localhost:8080',
       },
       'static': [
         {
