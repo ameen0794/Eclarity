@@ -70,7 +70,7 @@ module.exports = (env, argv, { SRC_DIR, DIST_DIR }) => {
     },
     devServer: {
       open: true,
-      port: 80,
+      port: 3000,
       historyApiFallback: true,
       headers: {
         'Cross-Origin-Embedder-Policy': 'require-corp',

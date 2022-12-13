@@ -8,7 +8,8 @@
       "type": "pwa-chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
-      80      "webRoot": "${workspaceFolder}"
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
     }
     // {
     //   "name": "Debug Jest Tests",
