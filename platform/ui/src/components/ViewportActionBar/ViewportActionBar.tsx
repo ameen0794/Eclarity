@@ -73,10 +73,10 @@ const ViewportActionBar = ({
       onContextMenu={e => e.preventDefault()}
     >
       <div className="flex flex-1 grow mt-2 min-w-48">
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <span className="mr-2 text-white text-large">{label}</span>
           {showStatus && getStatusComponent()}
-        </div>
+        </div> */}
         <div className="flex flex-col justify-start ml-4">
           <div className="flex">
             <span className="text-base text-white">{studyDate}</span>

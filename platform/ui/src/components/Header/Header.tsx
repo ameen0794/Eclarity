@@ -42,8 +42,11 @@ function Header({
           </div>
         </div> */}
         {/* <img src="/static/eclarity.jpeg"></img> */}
-        <a href="/">
-          {' '}
+        <a href="/" className="flex items-center">
+          <img
+            src="/assets/eclarity.png"
+            style={{ height: '40px', marginRight: '10px' }}
+          ></img>{' '}
           <h1 style={{ color: '#fff' }}>Eclarity Health</h1>
         </a>
 

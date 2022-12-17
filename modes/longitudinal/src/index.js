@@ -124,7 +124,7 @@ function modeFactory() {
         'ReferenceLines',
         'MPR',
         'Crosshairs',
-        'Reset',
+        // 'Reset',
         // 'MoreTools',
       ]);
     },
