@@ -318,25 +318,25 @@ const toolbarButtons = [
       ],
     },
   },
-  // {
-  //   id: 'Crosshairs',
-  //   type: 'ohif.radioGroup',
-  //   props: {
-  //     type: 'tool',
-  //     icon: 'tool-crosshair',
-  //     label: 'Crosshairs',
-  //     commands: [
-  //       {
-  //         commandName: 'setToolActive',
-  //         commandOptions: {
-  //           toolGroupId: 'mpr',
-  //           toolName: 'Crosshairs',
-  //         },
-  //         context: 'CORNERSTONE',
-  //       },
-  //     ],
-  //   },
-  // },
+  {
+    id: 'Crosshairs',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-crosshair',
+      label: 'Crosshair',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolGroupId: 'mpr',
+            toolName: 'Crosshairs',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
   {
     id: 'ReferenceLines',
     type: 'ohif.radioGroup',
@@ -353,7 +353,129 @@ const toolbarButtons = [
       ],
     },
   },
-
+  {
+    id: 'Angle',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-angle',
+      label: 'Angle',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'Angle',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'Rectangle',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-rectangle',
+      label: 'Rectangle',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'RectangleROI',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'Length',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-length',
+      label: 'Length',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'Length',
+          },
+          context: 'CORNERSTONE',
+        },
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'SRLength',
+            toolGroupId: 'SRToolGroup',
+          },
+          // we can use the setToolActive command for this from Cornerstone commandsModule
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'EllipticalROI',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-elipse',
+      label: 'Ellipse',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'EllipticalROI',
+          },
+          context: 'CORNERSTONE',
+        },
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'SREllipticalROI',
+            toolGroupId: 'SRToolGroup',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'Reset',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-reset',
+      label: 'Reset View',
+      commands: [
+        {
+          commandName: 'resetViewport',
+          commandOptions: {},
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'CobbAngleTool',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'cobb-angle',
+      label: 'Cobb Angle',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'CobbAngle',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
   // More...
   {
     id: 'MoreTools',

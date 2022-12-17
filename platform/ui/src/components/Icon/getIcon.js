@@ -62,6 +62,7 @@ import notificationsSuccess from './../../assets/icons/notifications-success.svg
 import toolZoom from './../../assets/icons/tool-zoom.svg';
 import toolCapture from './../../assets/icons/tool-capture.svg';
 import toolLayout from './../../assets/icons/tool-layout.svg';
+// import cobbAngle from './../../assets/icons/cobb-angle.png';
 import toolMore from './../../assets/icons/tool-more-menu.svg';
 import toolMove from './../../assets/icons/tool-move.svg';
 import toolWindow from './../../assets/icons/tool-window-level.svg';
@@ -142,6 +143,7 @@ const ICONS = {
   sorting: sorting,
   tracked: tracked,
   unlink: unlink,
+  // 'cobb-angle': cobbAngle,
   'panel-group-more': panelGroupMore,
   'panel-group-open-close': panelGroupOpenClose,
   'row-add': rowAdd,

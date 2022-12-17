@@ -62,11 +62,11 @@ module.exports = {
     defaultLocale: 'en',
     locales: isDeployPreview
       ? // Deploy preview: keep it fast!
-        ['en']
+      ['en']
       : isI18nStaging
-      ? // Staging locales: https://docusaurus-i18n-staging.netlify.app/
+        ? // Staging locales: https://docusaurus-i18n-staging.netlify.app/
         ['en']
-      : // Production locales
+        : // Production locales
         ['en'],
   },
   onBrokenLinks: 'warn',
@@ -283,8 +283,8 @@ module.exports = {
         hideOnScroll: false,
         logo: {
           alt: 'OHIF Logo',
-          src: 'img/ohif-logo-light.svg',
-          srcDark: 'img/ohif-logo.svg',
+          src: 'img/eclarity.png',
+          srcDark: 'img/eclarity.png',
         },
         items: [
           {

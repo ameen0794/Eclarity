@@ -111,14 +111,20 @@ function modeFactory() {
       ToolBarService.init(extensionManager);
       ToolBarService.addButtons(toolbarButtons);
       ToolBarService.createButtonSection('primary', [
-        // 'MeasurementTools',
+        'Length',
+        'EllipticalROI',
+        'Rectangle',
+        'Angle',
+        // 'CobbAngleTool',
         // 'Zoom',
         // 'WindowLevel',
         // 'Pan',
-        // 'Capture',
+        'Capture',
         'Layout',
-        // 'MPR',
         'ReferenceLines',
+        'MPR',
+        'Crosshairs',
+        'Reset',
         // 'MoreTools',
       ]);
     },
